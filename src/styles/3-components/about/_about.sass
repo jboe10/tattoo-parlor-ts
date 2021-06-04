@@ -1,0 +1,45 @@
+.about-section
+  display: flex;
+  flex-direction: column
+  .about-text
+    h2
+      margin-left: 5%;
+      letter-spacing: .8em;
+    p
+      margin: 0;
+      padding: 3% 5%;
+      background-color: $backgroundGray;
+  .shop-pic
+    height: 50vh;
+    width: 100%;
+  .lrg-pic
+    display: none
+@media screen and ( min-width: 1100px )
+  .about-section
+    overflow: hidden;
+    position: relative
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    .about-text
+      .about-title
+        margin-top: 10vh;
+        h2
+          margin-left: 6em;
+      p
+        width: 50vh;
+        padding: 1.5em;;
+        position: absolute;
+        font-size: 2vh;
+        top: 50%;  
+        left: 50%;
+        transform: translate( 30%, -50%);
+
+    .lrg-pic
+      display: block;
+    .sm-pic
+      display: none;
+    
+
+  
+
+    
