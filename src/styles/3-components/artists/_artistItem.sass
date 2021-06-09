@@ -1,9 +1,19 @@
+.item-left
+  grid-template-columns: 3fr 2fr;
+.item-right
+  grid-template-columns: 2fr 3fr;
 .artist-item
-  display: flex;
-  justify-content: center;
-  img
-    height: 350px;
-    width: auto;
+  display: grid;
+  .img-wrap
+    display: flex;
+    justify-content: center;
+    
+    img
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41); 
+      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41);
+      height: 350px;
+      max-width: 700px;
+      width: 100%
   .artist-info
     h3
       font-size: 1.8em;
@@ -23,43 +33,23 @@
   .info-right
     text-align: right;
     margin-right: 2em;
-@media screen and ( max-width: 1275px )
+    margin-left: auto;
+
+@media ( max-width: 1000px )
   .artist-item
-    flex-direction: column;
-    img
-      width: 700px;
-    .info-left
-      margin-right: auto;
-    .info-right
-      margin-left: auto;
-    .img-right
-    .img-left
-      margin-left: auto;
-@media screen and ( max-width: 800px )
-  .artist-item
-    flex-direction: column;
-    overflow: hidden;
-    img
-      max-width: 100vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
     .artist-info
-      p
-        max-width: 35ch;
-    .info-left
-      margin-right: auto;
-      margin-top: 50px;
-    .info-right
-      margin-left: auto;
-      margin-bottom: 50px;
-    .img-right
-      margin-right: 0;
-    .img-left
-      margin-left: 0;
-@media screen and ( max-width: 375px  )
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+@media ( max-width: 450px  )
   .artist-item
+    display: flex;
     img 
       display: none;
     .info-left
       margin-top: 0;
     .info-right
-      margin-bottom: 0;
-  
+      margin-bottom: 50px;

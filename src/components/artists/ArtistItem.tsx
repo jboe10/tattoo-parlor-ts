@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 interface ArtistItemProps {
   orientedLeft: boolean;
@@ -7,7 +7,6 @@ interface ArtistItemProps {
   ig: string;
   image: string;
 }
-
 
 export const ArtistItem: React.FC<ArtistItemProps> = (props) => {
 
@@ -26,20 +25,23 @@ export const ArtistItem: React.FC<ArtistItemProps> = (props) => {
   return (
     <>
       { props.orientedLeft && 
-        <div className="artist-item">
-          <img className="img-left" src={props.image} alt="artist"/>
+        <div className="artist-item item-left">
+          <div className="img-wrap">
+            <img className="img-left" src={props.image} alt="artist"/>
+          </div>
           <div className="artist-info info-left">
             {artistInfo}
           </div>
         </div>
       }
-      {
-        !props.orientedLeft && 
-        <div className="artist-item">
+      { !props.orientedLeft && 
+        <div className="artist-item item-right">
           <div className="artist-info info-right">
             {artistInfo}
           </div>
-          <img className="img-right" src={props.image} alt="artist"/>
+          <div className="img-wrap">
+            <img className="img-right" src={props.image} alt="artist"/>
+          </div>
         </div>
       }
     </>

@@ -1,11 +1,17 @@
 .artist-section
   background-color: $backgroundBlack;
   padding: 50px;
+  padding-left: auto;
+  padding-right: auto;
   display: grid; 
   grid-gap: 50px;
-@media screen and ( max-width: 800px )
+
+@media ( max-width: 1000px )
   .artist-section
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+
+@media ( max-width: 450px )
+  .artist-section
+    grid-gap: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
