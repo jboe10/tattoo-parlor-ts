@@ -1,0 +1,58 @@
+.artist-item
+  .img-wrap
+    display: flex;
+    justify-content: center;
+    
+    img
+      display: none;
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41); 
+      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41);
+      height: 350px;
+      max-width: 700px;
+      width: 100%
+  .artist-info
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3
+      font-size: 1.8em;
+      font-weight: 400;
+      margin-bottom: 0;
+      margin-top: .1em;
+      text-transform: uppercase;
+      color: white;
+    p
+      color: $paragraphGray;
+      max-width: 40ch;
+    h4
+      color: $backgroundGray;
+  .info-left
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 0;
+  .info-right
+    text-align: right;
+    margin-right: 2em;
+    margin-left: auto;
+
+@media screen and ( min-width: 450px  )
+  .artist-item
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    .img-wrap
+      img 
+        display: block;
+    .info-left
+    .info-right
+
+@media screen and ( min-width:  1000px )
+  .item-left
+    grid-template-columns: 3fr 2fr;
+  .item-right
+    grid-template-columns: 2fr 3fr;
+  .artist-item
+    display: grid;
+    grid-template-rows: 1fr;
+
+  
+

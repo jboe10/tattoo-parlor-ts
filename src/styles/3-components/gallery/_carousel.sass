@@ -1,0 +1,30 @@
+.carousel-wrap
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41); 
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.41);
+  .arrow
+    display: flex;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    cursor: pointer;
+    svg
+      font-size: 35px;
+      font-weight: 200;
+      color: white;
+  .arrow-left
+    padding-left: 1em;
+  .arrow-right
+    right: 0;
+    padding-right: 1em;
+  .carousel
+    display: flex;
+    overflow: hidden;
+    .image-wrap
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      max-width: 400px;
+      max-height: 650px;
+      min-width: 400px;
+      min-height: 650px;

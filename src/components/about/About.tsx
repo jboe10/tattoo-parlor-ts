@@ -1,14 +1,13 @@
 import React from 'react';
 import shopPic from '../../images/shopPic.jpg';
 import shopPicMed from '../../images/shopPicMed.jpg';
-import shopPicMobile from '../../images/shopPicMobile.jpg';
-
 
 interface AboutProps {
 
 }
 
 export const About: React.FC<AboutProps> = () => {
+
   return (
     <section className="about-section">
       <div className="about-text">
