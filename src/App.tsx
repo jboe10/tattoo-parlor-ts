@@ -5,14 +5,14 @@ import { Gallery } from './components/gallery/Gallery';
 import { Home } from './components/home/Home';
 import './styles/main.sass';
 function App() {
-  return (
-    <div className="App">
-      <Home/>
-      <Gallery/>
-      <Artists/>
-      <About/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Home />
+			<Gallery />
+			<Artists />
+			<About />
+		</div>
+	);
 }
 
 export default App;

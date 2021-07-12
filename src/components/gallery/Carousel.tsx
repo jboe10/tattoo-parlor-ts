@@ -17,7 +17,7 @@ export const Carousel: React.FC<CarouselProps> = () => {
   const handleArrowClick = (scrollDistance:number|undefined, scrollRight: boolean, event: MouseEvent) => {
 
     if (scrollWidth !== undefined) {
-      const scroll:number = scrollWidth;
+      const scroll: number = scrollWidth;
       if (scrollRight) {
         carouselRef.current?.scrollBy({
           left: scroll,
