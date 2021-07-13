@@ -7,9 +7,9 @@ export const Footer: React.FC<footerProps> = () => {
 		<footer>
 			<h3>Always Closed</h3>
 			<nav className="nav-desktop">
-				<a href="/">Gallery</a>
-				<a href="/">Artists</a>
-				<a href="/">Our Shop</a>
+				<a href="#gallery">Gallery</a>
+				<a href="#artists">Artists</a>
+				<a href="#about">Our Shop</a>
 				<a href="/">Contact</a>
 			</nav>
 		</footer>
