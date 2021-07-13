@@ -10,7 +10,9 @@ export const Home: React.FC<HomeProps> = () => {
 	return (
 		<div className="home" id="home">
 			<header>
-				<div className="header-logo">Always Closed</div>
+				<div className="header-logo">
+					<a href="/">Always Closed</a>
+				</div>
 				<nav className="nav-desktop">
 					<a href="#gallery">Gallery</a>
 					<a href="#artists">Artists</a>

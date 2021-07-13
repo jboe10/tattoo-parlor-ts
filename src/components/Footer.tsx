@@ -5,7 +5,9 @@ interface footerProps {}
 export const Footer: React.FC<footerProps> = () => {
 	return (
 		<footer>
-			<h3>Always Closed</h3>
+			<h3>
+				<a href="/">Always Closed</a>
+			</h3>
 			<nav className="nav-desktop">
 				<a href="#gallery">Gallery</a>
 				<a href="#artists">Artists</a>
