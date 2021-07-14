@@ -12,7 +12,6 @@ export const Footer: React.FC<footerProps> = () => {
 				<a href="#gallery">Gallery</a>
 				<a href="#artists">Artists</a>
 				<a href="#about">Our Shop</a>
-				<a href="/">Contact</a>
 			</nav>
 		</footer>
 	);
