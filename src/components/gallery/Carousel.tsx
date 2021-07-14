@@ -7,9 +7,7 @@ interface CarouselProps {}
 
 export const Carousel: React.FC<CarouselProps> = () => {
 	const carouselRef = useRef<null | HTMLDivElement>(null);
-
-	const imageWrapRef: Element | null = document.querySelector('.image-wrap');
-	const scrollWidth: number | undefined = imageWrapRef?.clientWidth;
+	const scrollWidth: number = 400;
 
 	const handleArrowClick = (
 		scrollDistance: number | undefined,
