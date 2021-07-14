@@ -8,9 +8,11 @@ export const Home: React.FC<HomeProps> = () => {
 	const [dropdownShow, setDropdownShow] = useState<Boolean>(false);
 
 	return (
-		<div className="home">
+		<div className="home" id="home">
 			<header>
-				<div className="header-logo">Always Closed</div>
+				<div className="header-logo">
+					<a href="/">Always Closed</a>
+				</div>
 				<nav className="nav-desktop">
 					<a href="#gallery">Gallery</a>
 					<a href="#artists">Artists</a>
