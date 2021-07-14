@@ -39,7 +39,7 @@ export const Home: React.FC<HomeProps> = () => {
 					<br />
 					Book Today with one of our artists
 					<span className="hero-color-change">
-						,It Will Definitely Take a While
+						, Good Luck getting a Spot this year
 					</span>
 				</div>
 			</div>
