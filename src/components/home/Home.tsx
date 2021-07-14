@@ -17,7 +17,6 @@ export const Home: React.FC<HomeProps> = () => {
 					<a href="#gallery">Gallery</a>
 					<a href="#artists">Artists</a>
 					<a href="#about">Our Shop</a>
-					<a href="/">Contact</a>
 				</nav>
 				<div
 					className="nav-mobile"
@@ -29,10 +28,9 @@ export const Home: React.FC<HomeProps> = () => {
 			</header>
 			{dropdownShow && (
 				<div className="mobile-dropdown-nav">
-					<a href="/">Gallery</a>
-					<a href="/">Artists</a>
-					<a href="/">Our Shop</a>
-					<a href="/">Contact</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#artists">Artists</a>
+					<a href="#about">Our Shop</a>
 				</div>
 			)}
 			<div className="hero-wrap">
@@ -41,7 +39,7 @@ export const Home: React.FC<HomeProps> = () => {
 					<br />
 					Book Today with one of our artists
 					<span className="hero-color-change">
-						,It Will Definitely Take a While
+						, Good Luck getting a Spot this year
 					</span>
 				</div>
 			</div>
